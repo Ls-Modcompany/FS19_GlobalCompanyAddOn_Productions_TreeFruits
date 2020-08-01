@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<map>
+    <extendedFillTypes>
+        <fillType name="APPLE" title="GlobalCompanyAddOn_Productions_TreeFruits_fillType_apple" />
+        <fillType name="CHERRY" title="GlobalCompanyAddOn_Productions_TreeFruits_fillType_cherry" />
+        <fillType name="PEAR" title="GlobalCompanyAddOn_Productions_TreeFruits_fillType_pear" />
+        <fillType name="PLUM" title="GlobalCompanyAddOn_Productions_TreeFruits_fillType_plum" />
+    </extendedFillTypes>   
+    
+    <extendedFillTypesCategories>
+        <extendedFillTypesCategory name="BULK" fillTypes="APPLE CHERRY PEAR PLUM" />
+    </extendedFillTypesCategories>    
+
+    <extendedFillTypesMaterials materialHolder="materialHolder.i3d">
+        <value name="APPLE" index="0" materialIndex="0" />
+        <value name="CHERRY" index="1" materialIndex="0" />
+        <value name="PEAR" index="2" materialIndex="0" />
+        <value name="PLUM" index="3" materialIndex="0" />
+    </extendedFillTypesMaterials>     
+</map>

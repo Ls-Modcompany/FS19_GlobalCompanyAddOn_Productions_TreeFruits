@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<globalCompany>	
+   <fillTypeManager filename="xml/gc_fillTypes.xml"/>
+
+    <shopManager>
+        <addCategories>
+            <category type="OBJECT" name="gcProductionTreeFruits" title="$l10n_GlobalCompanyAddOn_Productions_TreeFruits_category" image="items/store_honeyComb.dds" />
+            <category type="PLACEABLE" name="gcProductionTreeFruitsPlaceable" title="$l10n_GlobalCompanyAddOn_Productions_TreeFruits_category_placeable" image="items/store_appleTree.dds" />
+        </addCategories>
+        
+        <sortCategories>
+            <category type="OBJECT" name="gcProductionTreeFruits" after="objectMisc" />
+            <category type="PLACEABLE" name="gcProductionTreeFruitsPlaceable" after="globalCompanyPlaceable" />
+        </sortCategories>
+    </shopManager>
+</globalCompany>

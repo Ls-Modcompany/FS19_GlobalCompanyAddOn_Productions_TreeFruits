@@ -1,0 +1,28 @@
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<l10n>
+	<elements>
+		<e k="GlobalCompanyAddOn_Productions_TreeFruits_category" v="Fruit tree supplies"/>
+		<e k="GlobalCompanyAddOn_Productions_TreeFruits_category_placeable" v="Fruit trees"/>
+
+		<e k="GlobalCompanyAddOn_Productions_TreeFruits_shopItem_appleTree" v="Apple tree"/>
+		<e k="GlobalCompanyAddOn_Productions_TreeFruits_shopItem_function_appleTree" v="Apples grow on an apple tree. Fertiliser and water are needed."/>
+		<e k="GlobalCompanyAddOn_Productions_TreeFruits_shopItem_plumTree" v="Plum tree"/>
+		<e k="GlobalCompanyAddOn_Productions_TreeFruits_shopItem_function_plumTree" v="There are plums growing on a plum tree. Fertiliser and water are needed."/>
+		<e k="GlobalCompanyAddOn_Productions_TreeFruits_shopItem_cherryTree" v="Cherry tree"/>
+		<e k="GlobalCompanyAddOn_Productions_TreeFruits_shopItem_function_cherryTree" v="Cherries grow on a cherry tree. Fertiliser and water are needed."/>
+		<e k="GlobalCompanyAddOn_Productions_TreeFruits_shopItem_pearTree" v="Pear tree"/>
+		<e k="GlobalCompanyAddOn_Productions_TreeFruits_shopItem_function_pearTree" v="Pears grow on a pear tree. Fertilizer and water are needed."/>
+
+		<e k="GlobalCompanyAddOn_Productions_TreeFruits_fillType_apple" v="Apples"/>
+		<e k="GlobalCompanyAddOn_Productions_TreeFruits_fillType_cherry" v="Cherries"/>
+		<e k="GlobalCompanyAddOn_Productions_TreeFruits_fillType_pear" v="Pears"/>
+		<e k="GlobalCompanyAddOn_Productions_TreeFruits_fillType_plum" v="Plums"/>
+
+		<e k="GlobalCompanyAddOn_Productions_TreeFruits_fillType_unit_kg" v="Kg"/>
+
+		<e k="GlobalCompanyAddOn_Productions_TreeFruits_tree_input_manure" v="Manure"/>
+		<e k="GlobalCompanyAddOn_Productions_TreeFruits_tree_input_water" v="Water"/>
+		<e k="GlobalCompanyAddOn_Productions_TreeFruits_tree_line" v="Tree fruit"/>    
+    </elements>
+</l10n>

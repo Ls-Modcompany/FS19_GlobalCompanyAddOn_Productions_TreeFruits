@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable>
+    <storeData>
+        <name>$l10n_GlobalCompanyAddOn_Productions_TreeFruits_shopItem_plumTree</name>
+        <functions>
+            <function>$l10n_GlobalCompanyAddOn_Productions_TreeFruits_shopItem_function_plumTree</function>
+        </functions>
+        <image>items/store_plumTree.dds</image>
+        <price>400</price>
+        <dailyUpkeep>5</dailyUpkeep>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>GCRODUCTIONS</brand>
+        <specs>
+            <capacity>1000</capacity>
+            <fillTypes>manure water</fillTypes>
+        </specs>
+        <species>placeable</species>
+        <category>gcProductionTreeFruitsPlaceable</category>
+    </storeData>
+
+    <placeableType>GC_ProductionFactoryPlaceable</placeableType>
+    <filename>items/plumTree.i3d</filename>
+    <placement testSizeX="1" testSizeZ="1" sizeX="1" sizeZ="1" useRandomYRotation="false" useManualYRotation="true" />
+	
+	<tipOcclusionUpdateArea sizeX="15" sizeZ="8" />	
+		
+	<productionFactories>
+		<productionFactory indexName="PLUMTREE" saveId="globalCompany_honeyHouse">
+			<guiInformation title="GlobalCompanyAddOn_Productions_TreeFruits_shopItem_plumTree" imageFilename="items/store_plumTree.dds" description="GlobalCompanyAddOn_Productions_TreeFruits_shopItem_function_plumTree" cameraFeed="gui_camera"/>
+			
+			<operation updateDelayMinutes="5" showInGlobalGUI="false" />
+			
+			<registerUnloadingTriggers>
+				<unloadingTrigger name="UnloadingTriggerInput" exactFillRootNode="exactFillRootNode" />
+			</registerUnloadingTriggers>
+
+			<registerInputProducts>				
+				<inputProduct name="IP_MANURE" capacity="2000" title="GlobalCompanyAddOn_Productions_TreeFruits_tree_input_manure" > 
+					<fillTypes>
+						<fillType name="MANURE" />
+					</fillTypes>										
+					<inputMethods>
+						<unloadingTrigger name="UnloadingTriggerInput"/>
+					</inputMethods>	
+                    <movers>
+                        <mover node="plane">
+                            <translation minimum="0 -0.252 0" maximum="0 -0.01 0" />
+                        </mover>
+                    </movers>	
+				</inputProduct>	
+                <inputProduct name="IP_WATER" capacity="2000" title="GlobalCompanyAddOn_Productions_TreeFruits_tree_input_water" > 
+					<fillTypes>
+						<fillType name="WATER" />
+					</fillTypes>										
+					<inputMethods>
+						<unloadingTrigger name="UnloadingTriggerInput"/>
+					</inputMethods>	
+				</inputProduct>	
+			</registerInputProducts>
+			
+			<registerOutputProducts>
+				<outputProduct name="OP_PLUM" fillType="PLUM" isExtend="true" capacity="1000" title="GlobalCompanyAddOn_Productions_TreeFruits_fillType_plum" unitLang="GlobalCompanyAddOn_Productions_TreeFruits_fillType_unit_kg" >
+					<outputMethods>
+                        <extendedFilltypesFillTrigger node="OutputTrigger" fillLitersPerSecond="10"/>
+                    </outputMethods>   
+                    <visibilityNodes>
+                        <nodeGroup node="VisNodes" />
+                    </visibilityNodes>
+				</outputProduct>
+			</registerOutputProducts>
+			
+			<productLines>
+				<productLine autoLineStart="true" outputPerHour="8" title="GlobalCompanyAddOn_Productions_TreeFruits_tree_line" showInGUI="true">
+					<inputs>
+						<inputProduct name="IP_MANURE" percent="100" />
+						<inputProduct name="IP_WATER" percent="100" />
+					</inputs>	
+					<outputs>
+						<outputProduct name="OP_PLUM" percent="100" />
+					</outputs>
+					<playerTrigger playerTriggerNode="PlayerTrigger" showPopupUI="true"/>			
+					<seasons>
+						<spring outputPerHour="0" />
+						<summer outputPerHour="3" />
+						<autumn outputPerHour="8" />
+						<winter outputPerHour="0" />
+					</seasons>
+				</productLine>
+			</productLines>	
+
+			<i3dMappings>  
+                <i3dMapping id="VisNodes" node="0"/>
+                <i3dMapping id="gui_camera" node="1"/>
+                <i3dMapping id="PlayerTrigger" node="2"/>
+                <i3dMapping id="OutputTrigger" node="3"/>
+                <i3dMapping id="exactFillRootNode" node="4"/>
+                <i3dMapping id="plane" node="5"/>
+			</i3dMappings>				
+		</productionFactory>
+	</productionFactories>
+</placeable>

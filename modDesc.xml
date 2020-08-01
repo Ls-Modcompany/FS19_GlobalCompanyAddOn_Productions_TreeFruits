@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="47">
+    <author>LsModcompany / kevink98</author>
+    <version>1.0.0.0</version>
+    <title>
+        <en>GlobalCompany - Productions - Tree Fruits</en>
+        <de>GlobalCompany - Productions - Baumobst</de>
+    </title>
+    <description>
+        <en><![CDATA[Productions - Honey extension
+
+Extension to productions - fruit trees
+
+This pack contains apple-, cherry-, plum- and peartrees.
+
+Costs: 400 € / tree
+Maintenance costs: 5 € / tree / day
+
+The trees need to be watered. Manure is also needed. For harvesting apples, the pallet with wooden frame is recommended.
+
+Information: Mod only playable in combination with GlobalCompany and GlobalCompany - Productions!]]></en>
+        <de><![CDATA[Erweiterung zu Produktionen - Obstbäume
+
+Dieses Pack enthält Apfel-, Kirsch-, Pflaumen- und Birnenbäume.
+
+Kosten: 400 € / Baum
+Unterhaltskosten: 5 € / Baum / Tag
+
+Die Bäume müssen bewässert werden. Zudem wird Mist benötigt. Für die Ernte von Äpfel ist die Palette mit Holzrahmen zu empfehlen.
+
+Information: Mod nur in Verbindung mit GlobalCompany und GlobalCompany - Productions spielbar!]]></de>
+    </description>
+    <iconFilename>icon_productionTreeFruits.dds</iconFilename>
+    <multiplayer supported="true" />
+
+    <storeItems>
+        <storeItem xmlFilename="items/AppleTree.xml" />
+        <storeItem xmlFilename="items/CherryTree.xml" />
+        <storeItem xmlFilename="items/PlumTree.xml" />
+        <storeItem xmlFilename="items/PearTree.xml" />
+    </storeItems>
+	
+	<extraSourceFiles>
+		<sourceFile filename="scripts/GC_Checker.lua" />
+    </extraSourceFiles>
+    
+	<specializations>
+        <specialization name="gcExtendedFillType" className="GC_SpecExtendedFillType" filename="../FS19_GlobalCompany/vehicles/specializations/ExtendedFillType.lua"/>
+        <specialization name="gcProductionFactory" className="GC_SpecProductionFactory" filename="../FS19_GlobalCompany/vehicles/specializations/ProductionFactory.lua"/>
+ 	</specializations>  
+
+	<vehicleTypes>
+        <type name="gcProductionItem" parent="base" filename="$dataS/scripts/vehicles/Vehicle.lua">	
+            <specialization name="tensionBeltObject" />	
+			<specialization name="gcExtendedFillType"/>			
+        </type>
+        <type name="gcProductionItemNone" parent="base" filename="$dataS/scripts/vehicles/Vehicle.lua">	
+            <specialization name="tensionBeltObject" />			
+        </type>
+        <type name="gcProductionFactoryVehicle" parent="base" filename="$dataS/scripts/vehicles/Vehicle.lua">	
+            <specialization name="tensionBeltObject" />	
+			<specialization name="gcProductionFactory"/>				
+        </type>
+	</vehicleTypes>
+
+    <brands>
+        <brand name="GCRODUCTIONS" title="GlobalCompany Productions" image="../FS19_GlobalCompanyAddOn_Productions/brand_productions.dds"/>
+    </brands>
+	<globalCompany minimumVersion="1.7.0.0" />
+</modDesc>

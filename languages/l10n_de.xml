@@ -1,0 +1,28 @@
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<l10n>
+	<elements>
+		<e k="GlobalCompanyAddOn_Productions_TreeFruits_category" v="Obstbaumbedarf"/>
+		<e k="GlobalCompanyAddOn_Productions_TreeFruits_category_placeable" v="Obstbäume"/>
+
+		<e k="GlobalCompanyAddOn_Productions_TreeFruits_shopItem_appleTree" v="Apfelbaum"/>
+		<e k="GlobalCompanyAddOn_Productions_TreeFruits_shopItem_function_appleTree" v="Auf einem Apfelbaum wachsen Äpfel. Es wird Dünger und Wasser benötigt."/>
+		<e k="GlobalCompanyAddOn_Productions_TreeFruits_shopItem_plumTree" v="Plaumenbaum"/>
+		<e k="GlobalCompanyAddOn_Productions_TreeFruits_shopItem_function_plumTree" v="Auf einem Plaumenbaum wachsen Plaumen. Es wird Dünger und Wasser benötigt."/>
+		<e k="GlobalCompanyAddOn_Productions_TreeFruits_shopItem_cherryTree" v="Kirschenbaum"/>
+		<e k="GlobalCompanyAddOn_Productions_TreeFruits_shopItem_function_cherryTree" v="Auf einem Kirschenbaum wachsen Kirschen. Es wird Dünger und Wasser benötigt."/>
+		<e k="GlobalCompanyAddOn_Productions_TreeFruits_shopItem_pearTree" v="Birnenbaum"/>
+		<e k="GlobalCompanyAddOn_Productions_TreeFruits_shopItem_function_pearTree" v="Auf einem Birnenbaum wachsen Birnen. Es wird Dünger und Wasser benötigt."/>
+
+		<e k="GlobalCompanyAddOn_Productions_TreeFruits_fillType_apple" v="Äpfel"/>
+		<e k="GlobalCompanyAddOn_Productions_TreeFruits_fillType_cherry" v="Kirschen"/>
+		<e k="GlobalCompanyAddOn_Productions_TreeFruits_fillType_pear" v="Birnen"/>
+		<e k="GlobalCompanyAddOn_Productions_TreeFruits_fillType_plum" v="Pflaumen"/>
+
+		<e k="GlobalCompanyAddOn_Productions_TreeFruits_fillType_unit_kg" v="Kg"/>
+
+		<e k="GlobalCompanyAddOn_Productions_TreeFruits_tree_input_manure" v="Mist"/>
+		<e k="GlobalCompanyAddOn_Productions_TreeFruits_tree_input_water" v="Wasser"/>
+		<e k="GlobalCompanyAddOn_Productions_TreeFruits_tree_line" v="Baumobst"/>    
+    </elements>
+</l10n>
